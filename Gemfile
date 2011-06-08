@@ -14,6 +14,9 @@ gem 'uglifier'
 
 gem 'jquery-rails'
 gem 'backbone-rails'
+# gem 'guard'
+# gem 'guard-coffeescript'
+gem 'rspec-rails'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -24,7 +27,8 @@ gem 'backbone-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
-group :test do
+group :test, :development do
   # Pretty printed test output
   gem 'turn', :require => false
+  gem 'evergreen', :require => 'evergreen/rails'
 end
