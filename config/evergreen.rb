@@ -34,6 +34,17 @@ unless defined?(EVERGREEN_LOADED)
       alias_method :application_without_additions, :application
       alias_method :application, :application_with_additions
     end
+    
+    class Spec
+      def read
+        if full_path =~ /\.coffee$/
+          CoffeeScript.compile(File.read(full_path))
+        else
+          File.read(full_path)
+        end
+      end
+      alias_method :contents, :read
+    end
   end
 
 end
