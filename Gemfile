@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0.rc1'
+gem 'rails', '3.1.0.rc2'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
@@ -14,18 +14,7 @@ gem 'uglifier'
 
 gem 'jquery-rails'
 gem 'backbone-rails'
-# gem 'guard'
-# gem 'guard-coffeescript'
 gem 'rspec-rails'
-
-# Use unicorn as the web server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
 
 group :test, :development do
   # Pretty printed test output
