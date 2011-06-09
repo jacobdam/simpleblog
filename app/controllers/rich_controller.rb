@@ -1,0 +1,3 @@
+class RichController < ApplicationController
+
+end

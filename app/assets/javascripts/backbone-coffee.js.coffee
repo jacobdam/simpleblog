@@ -1,3 +1,6 @@
+#= require underscore
+#= require backbone
+
 # Backbone CoffeeScript Helpers by M@ McCray.
 # Source: http://gist.github.com/625893
 #
@@ -19,9 +22,6 @@
 #
 # Etc...
 #
-
-#= require "backbone"
-#= require "underscore"
 
 class Events
 

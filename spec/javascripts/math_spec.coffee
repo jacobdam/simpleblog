@@ -1,4 +1,4 @@
-require('/assets/math.coffee')
+require('/assets/lib/math.js')
 require('/assets/underscore.js')
 
 describe 'Math:', ->
@@ -25,6 +25,3 @@ describe 'Math:', ->
         counter++
 
       expect(uuids.length).toEqual _.uniq(uuids).length
-
-    it "should failed", ->
-      expect(1).toEqual(0)

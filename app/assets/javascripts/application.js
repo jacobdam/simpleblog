@@ -3,8 +3,12 @@
 // be included in the compiled file accessible from http://example.com/assets/application.js
 // It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
 // the compiled file.
-//
-//= require jquery
+// = require jquery
 //= require jquery_ujs
 //= require backbone-coffee
-//= require_tree .
+//= require backbone-coffee
+//= require_tree ./lib
+//= require ./app
+//= require_tree ./models
+//= require_tree ./controllers
+//= require_tree ./views
