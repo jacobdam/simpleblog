@@ -32,7 +32,8 @@ class App.Views.Edit extends View
         @render()
         @delegateEvents()
         
-        Backbone.history.saveLocation "posts/#{model.id}"
+        #Backbone.history.saveLocation "posts/#{model.id}"
+        window.location = '#'
       error: => new App.Views.Error();
       
   render: ->
