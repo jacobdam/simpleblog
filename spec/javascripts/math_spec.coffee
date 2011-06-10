@@ -27,5 +27,4 @@ describe 'Math:', ->
       expect(uuids.length).toEqual _.uniq(uuids).length
     
     it 'should be failed', ->
-      expect(1).toEqual(3)
-  
+      expect(1+1).toEqual(3)
