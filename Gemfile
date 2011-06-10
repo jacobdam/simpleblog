@@ -21,4 +21,5 @@ group :test, :development do
   # Pretty printed test output
   gem 'turn', :require => false
   gem 'evergreen', :require => 'evergreen/rails'
+  gem 'akephalos'
 end

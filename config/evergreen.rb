@@ -2,6 +2,13 @@ unless defined?(EVERGREEN_LOADED)
   EVERGREEN_LOADED = true
 
   require ::File.expand_path('../environment',  __FILE__)
+  
+  require 'akephalos'
+
+  Evergreen.configure do |config|
+    # config.driver = :webkit
+    config.driver = :akephalos
+  end
 
   unless "".respond_to?(:each)
     String.class_eval do
